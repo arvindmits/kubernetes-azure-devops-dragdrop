@@ -1,0 +1,19 @@
+{
+  "name": "dragdrop-app",
+  "version": "1.0.0",
+  "description": "dragdrop helm charts to kubernetes clusters and trigger azure devops pipelines",
+  "main": "\\router\\server.js",
+  "dependencies": {
+    "azure-devops-node-api": "^10.1.1",
+    "ejs": "^3.0.2",
+    "express": "^4.17.1",
+    "request": "^2.88.2",
+    "xmlhttprequest": "^1.8.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node router\\server.js"
+  },
+  "author": "Rene Schoonrok",
+  "license": "ISC"
+}

@@ -1,0 +1,32 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: vsts-agent
+  namespace: eks-tst
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: vsts-agent
+        version: "0.1"
+    spec:
+      containers:
+      - name: vsts-agent
+        image: reneschoonrok/vsts:helm
+        env:
+          - name: AZP_TOKEN
+            value: "<SupplyYourAZPTokenHere>"
+          - name: AZP_AGENT_NAME
+            value: aks-dev
+          - name: AZP_POOL
+            value: aks-dev
+          - name: AZP_URL
+            value: <https://dev.azure.com/...........>
+        volumeMounts:
+        - mountPath: /var/run/docker.sock
+          name: docker-volume
+      volumes:
+      - name: docker-volume
+        hostPath:
+          path: /var/run/docker.sock

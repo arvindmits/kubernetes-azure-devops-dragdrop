@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>A single Azuredevops drag and drop from any K8s to any K8s</title>
+  <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+
+<div id="dhtmlgoodies_dragDropContainer">
+  <div id="topBar">
+  </div>
+  <div id="dhtmlgoodies_listOfItems">
+    <div>
+      <p>Helm-charts</p>
+      <ul id="allItems">
+        <li id="node1">nginx-sample</li>
+        <li id="node2">grafana</li>
+        <li id="node3">kube-slack</li>
+        <li id="node4">locust</li>
+        <li id="node5">tomcat</li>
+        <li id="node6">Nodejs-helloworld</li>
+        <li id="node7">mysql</li>
+        <li id="node8">dot-net-core-sample</li>
+      </ul>
+    </div>
+  </div>
+  <div id="dhtmlgoodies_mainContainer">
+    <div>
+      <p>eks-dev</p>
+      <div class="inner-div-logo"><img src="./img/aws.png"></div>
+      <ul id="eks-dev">
+      </ul>
+
+    </div>
+    <div>
+      <p>eks-tst</p>
+      <div class="inner-div-logo"><img src="./img/aws.png"></div>
+      <ul id="eks-tst"></ul>
+
+    </div>
+    <div>
+      <p>aks-dev</p>
+      <div class="inner-div-logo"><img src="./img/azure.png"></div>
+      <ul id="aks-dev">
+      </ul>
+
+    </div>
+    <div>
+      <p>aks-tst</p>
+      <div class="inner-div-logo"><img src="./img/azure.png"></div>
+      <ul id="aks-tst">
+      </ul>
+
+    </div>
+
+  </div>
+  <label for="Status">Status: </label><input type="text" class="input-text-item"  name="Status" style="width:330px;"><br>
+  <!-- jQuery('label[for=email]').text('your new label text'); -->
+  <label for="k2slog">Log: </label><input type="text" class="input-text-item" id="k2slog" name="k2slog" style="width:350px;"><br>
+  <label for="mytoken">Token: </label><input type="password" id="mytoken" name="mytoken">
+</div>
+<ul id="dragContent"></ul>
+<div id="dragDropIndicator"><img src="/img/k8siconsmall.png"></div>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script  src="/js/script.js"></script>
+<div class="outer-div-logo"><img src="./img/k8slogo.png"></div>
+<div class="outer-div"><img src="./img/k8sword.png"></div>
+</body>
+</html>

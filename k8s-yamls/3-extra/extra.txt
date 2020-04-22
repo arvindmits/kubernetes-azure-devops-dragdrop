@@ -1,0 +1,5 @@
+# give the azure-devops-agents rights to deploy new resources
+kubectl create clusterrolebinding add-on-cluster-admin-aks-dev --clusterrole=cluster-admin --serviceaccount=aks-dev:default -n aks-dev
+kubectl create clusterrolebinding add-on-cluster-admin-eks-tst --clusterrole=cluster-admin --serviceaccount=eks-tst:default -n eks-tst
+kubectl create clusterrolebinding add-on-cluster-admin-aks-tst --clusterrole=cluster-admin --serviceaccount=aks-tst:default -n aks-tst
+kubectl create clusterrolebinding add-on-cluster-admin-eks-dev --clusterrole=cluster-admin --serviceaccount=eks-dev:default -n eks-dev

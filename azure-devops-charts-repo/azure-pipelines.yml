@@ -1,0 +1,9 @@
+trigger:
+- master
+pool: $(mypool)
+steps:
+- task: CmdLine@2
+  inputs:
+    script: |
+      helm $(helmaction) $(helmchart) $(System.DefaultWorkingDirectory)/$(helmchart) -n $(mypool)
+
