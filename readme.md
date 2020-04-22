@@ -5,7 +5,7 @@ In this example it is deploying to an AWS-EKS and an Azure-AKS cluster at the sa
 This is done by deploying Azure-Devops agents in the clusters itself. In 4 namespaces there are 4 Azure-Devops agents running. <br/>
 Each agent is running in another agent-pool allowing for choice where to deploy. <br/>
 <br/>
-![](/azdevops.gif)
+![demo](/azdevops.gif)
 <br/>
 ## Try this yourself (you can also run this on minikube with 4 namespaces) <br/>
 <br/>
@@ -14,5 +14,5 @@ Each agent is running in another agent-pool allowing for choice where to deploy.
    Create a pipeline. The code for the pipeline in is the same folder (azure-pipelines.yml) <br/>
    Create 3 variables in the pipeline: helmaction, helmchart and mypool <br/>
    note the pipelineid number in the url link (see image below). With your pipeline this will be a different number probably <br/>
-![](/pipelineid.jpg)
+![pipelineid](/pipelineid.jpg)
 <br/>
