@@ -14,5 +14,5 @@ Each agent is running in another agent-pool allowing for choice where to deploy.
    Create a pipeline. The code for the pipeline in is the same folder (azure-pipelines.yml) <br/>
    Create 3 variables in the pipeline: helmaction, helmchart and mypool <br/>
    note the pipelineid number in the url link (see image below). With your pipeline this will be a different number probably <br/>
-![pipelineid](/pipeline.png)
+![pipelineid](/pipeline.gif)
 <br/>
