@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: vsts-agent
-        image: reneschoonrok/vsts:helm
+        image: reneschoonrok/vsts:helmbionic
         env:
           - name: AZP_TOKEN
             value: "<SupplyYourAZPTokenHere>"
