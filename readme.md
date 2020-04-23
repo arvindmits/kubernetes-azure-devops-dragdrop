@@ -11,7 +11,6 @@ Each agent is running in another agent-pool allowing for choice where to deploy.
 <br/>
 Try this yourself (you can also run this on minikube with 4 namespaces) <br/>
 <br/>
-<<<<<<< HEAD
 1) Azuredevops <br/>
 
 -Create an Azure-devops organization, add a project and within the project add a repo <br/>
@@ -42,16 +41,6 @@ Kubernetes <br/>
 ![](media/values2.png)
 
 Optionally build your own dockerfile for azdevops agent (see ...docker-image folder)
-=======
-1) Create an Azure-devops organization add a project and within the project add a repo <br/>
-   Add all the files from the folder azure-devops-charts-repo to that repo <br/>
-   Create a pipeline. The code for the pipeline in is the same folder (azure-pipelines.yml) <br/>
-   Create 3 variables in the pipeline: helmaction, helmchart and mypool <br/>
-   note the pipelineid number in the url link (see image below). With your pipeline this will be a different number probably <br/>
-   
-![pipelineid](/pipeline.gif)
-
->>>>>>> cfb99654c3b7d27d1d749df354d9d9c8afd481c4
 <br/>
 3)
 The dragdrop app <br/>

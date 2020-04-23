@@ -13,6 +13,7 @@ then goto localhost:3000
 Also create folowing env vars: 
 
 API_PROJECT = <enter azure devops projectname>
+API_PIPELINEID <the pipeline-id see readme.md in git project>
 API_TOKEN = <enter azure devops API token that has rights to trigger pipeline>
 API_URL = HTTPS://dev.azure.com/<yourazdevopsorg>
-TOKEN = <a security password/token used in the gui that is checked when triggering pipeline.just set this to 'something' and enter the same in the gui when triggering>
+TOKEN = <a password/token used in the app that is checked when triggering pipeline. Just set this to 'something' and enter the same in the gui>

@@ -17,12 +17,12 @@ spec:
         env:
           - name: AZP_TOKEN
             value: "<SupplyYourAZPTokenHere>"
+          - name: AZP_URL
+            value: <https://dev.azure.com/...........>
           - name: AZP_AGENT_NAME
             value: aks-dev
           - name: AZP_POOL
             value: aks-dev
-          - name: AZP_URL
-            value: <https://dev.azure.com/...........>
         volumeMounts:
         - mountPath: /var/run/docker.sock
           name: docker-volume
