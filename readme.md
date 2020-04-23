@@ -39,6 +39,8 @@ Try this yourself (you can also run this on minikube with 4 namespaces) <br/>
 
 ![](media/values2.png)
 
+The azure-devops-agent docker image has Helm3, Kubectl and is build on Ubuntu 18.04 (latest). <br/>
+
 Optionally build your own dockerfile for azdevops agent (see ...docker-image folder)
 <br/>
 <br/>
