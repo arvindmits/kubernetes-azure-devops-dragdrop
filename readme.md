@@ -30,8 +30,7 @@ Try this yourself (you can also run this on minikube with 4 namespaces) <br/>
 
 ![](media/pat.png) <br/>
 
-2) 
-Kubernetes <br/>
+2) Kubernetes <br/>
 
 -Create 4 namespaces either in 2 K8s clusters (AWS, EKS, GKE) or in minikube or wherever. See the K8s-yamls folder <br/>
 -Extend the rights of the default account so that that account can deploy resources in the namespaces (rights.yaml)<br/>
@@ -42,8 +41,9 @@ Kubernetes <br/>
 
 Optionally build your own dockerfile for azdevops agent (see ...docker-image folder)
 <br/>
+<br/>
 3)
-The dragdrop app <br/>
+The frontend app <br/>
 On the environment where you run the app set these env vars:
 
 API_PROJECT = *enter azure devops projectname* <br/>
@@ -54,12 +54,12 @@ TOKEN = *a password/token used in the app that is checked when triggering pipeli
 
 Install npm / nodejs
 
-from the dragdrop-app folder open a command prompt:
-npm i
+from the dragdrop-app folder open a command prompt: <br/>
+npm i <br/>
 npm start
 
-then goto localhost:3000 
-Make sure you enter the token here before drag and dropping:
+then open a browser and go to localhost:3000 
+Make sure you enter the TOKEN here ('something') before drag and dropping:
 
 ![](media/token.png)
 
