@@ -6,7 +6,7 @@ This is done by deploying Azure-Devops agents in the clusters itself. In 4 names
 Each agent is running in another agent-pool allowing for choice where to deploy. <br/>
 <br/>
 
-![](media/azdevops.gif)
+![](media/azdevops2.gif)
 
 <br/>
 Try this yourself (you can also run this on minikube with 4 namespaces) <br/>
