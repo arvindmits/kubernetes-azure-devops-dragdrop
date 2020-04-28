@@ -49,7 +49,7 @@ The frontend app <br/>
 On the environment where you run the app set these env vars:
 
 API_PROJECT = *enter azure devops projectname* <br/>
-API_PIPELINEID = *the pipeline id you noted at step 1* 
+API_PIPELINEID = *the pipeline id you noted at step 1* <br/>
 API_TOKEN = *enter azure devops API token that has rights to trigger pipeline* <br/>
 API_URL = HTTPS://dev.azure.com/*yourazdevopsorg* <br/>
 TOKEN = *a password/token used in the app that is checked when triggering pipeline. Just set this to 'something' and enter the same in the gui* <br/>
